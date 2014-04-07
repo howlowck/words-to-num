@@ -14,7 +14,7 @@ Global:
 WtoN.convert('one hundred and 42'); // => 142
 ```
 
-Browserify:
+CommonJS:
 
 ```
 var WtoN = require('words-to-num');
