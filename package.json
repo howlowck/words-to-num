@@ -1,6 +1,6 @@
 {
   "name": "words-to-num",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Converts English Numeric Words to Integer",
   "author": {
     "name" : "Hao Luo",
@@ -19,6 +19,7 @@
     "type": "git",
     "url": "http://github.com/howlowck/words-to-num.git"
   },
+  "homepage": "https://howlowck.github.com/words-to-num",
   "license": "MIT",
   "devDependencies": {
     "gulp": "^3.6.0",
