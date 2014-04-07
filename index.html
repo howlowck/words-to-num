@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Words To Number</title>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <script src="public/js/build/main.js"></script>
+  <style>
+    * {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      margin: 20px;
+    }
+    h2 {
+      margin: 10px;
+    }
+    .container {
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    #query {
+      width: 80%;
+      width: calc(100% - 62px);
+      border-width: 1px;
+      border-radius: 5px;
+      margin: 20px;
+      padding: 10px;
+      font-size: 1em;
+    }
+
+    #output {
+      background-color: lightgray;
+      width: 80%;
+      width: calc(100% - 60px);
+      padding: 10px;
+      margin: 20px;
+      min-height: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Words to Number (WtoN)</h1>
+    <h2>Input</h2>
+    <textarea id="query" placeholder="type some numeric words here"></textarea>
+    <h2>Output</h2>
+    <div id="output">
+
+    </div>
+  </div>
+  <script charset="utf-8">
+    var query = document.querySelector('#query');
+    var output = document.querySelector('#output');
+    query.addEventListener('keyup', function () {
+      output.innerText = WtoN.convert(query.value);
+    });
+  </script>
+</body>
+</html>
