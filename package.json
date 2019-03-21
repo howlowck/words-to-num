@@ -1,7 +1,8 @@
 {
   "name": "words-to-num",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Converts English Numeric Words to Integer",
+  "typings": "./index.d.ts",
   "author": {
     "name" : "Hao Luo",
     "email": "howlowck@gmail.com"
