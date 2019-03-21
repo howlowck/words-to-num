@@ -4,7 +4,7 @@
   "description": "Converts English Numeric Words to Integer",
   "typings": "./index.d.ts",
   "author": {
-    "name" : "Hao Luo",
+    "name": "Hao Luo",
     "email": "howlowck@gmail.com"
   },
   "keywords": [
@@ -14,8 +14,7 @@
     "converter"
   ],
   "main": "./public/js/main.js",
-  "dependencies": {
-  },
+  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "http://github.com/howlowck/words-to-num.git"

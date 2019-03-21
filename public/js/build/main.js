@@ -28,7 +28,7 @@ var WtoN = {
     'sixty': 60,
     'seventy': 70,
     'eighty': 80,
-    'ninety': 90,
+    'ninety': 90
   },
   magnitudes: {
     'thousand': 1000,
@@ -37,44 +37,44 @@ var WtoN = {
     'trillion': 1000000000000
   },
   convert: function (words) {
-    return this.compute(this.tokenize(words));
+    return this.compute(this.tokenize(words))
   },
   tokenize: function (words) {
-    var array = words.split(' ');
-    var result = [];
+    var array = words.split(' ')
+    var result = []
     array.forEach(function (string) {
-      if ( ! isNaN(+string)) {
-        result.push(+string);
-      } else if (string == 'and') {
+      if (!isNaN(+string)) {
+        result.push(+string)
+      } else if (string === 'and') {
       } else {
-        result.push(string);
+        result.push(string)
       }
-    });
-    return result;
+    })
+    return result
   },
   compute: function (tokens) {
-    var result;
-    var ins = this;
-    var temp = 0;
-    var sum = 0;
-    result = tokens.forEach(function (token) {
+    var ins = this
+    var temp = 0
+    var sum = 0
+    // TODO: change this forEach to a reduce
+    tokens.forEach(function (token) {
       if (ins.units[token] != null) {
-        sum += ins.units[token];
-      } else if (token == 'hundred') {
-        sum *= 100;
-      } else if (! isNaN(token)) {
-        sum += token;
+        sum += ins.units[token]
+      } else if (token === 'hundred') {
+        sum *= 100
+      } else if (!isNaN(token)) {
+        sum += token
       } else {
-        mag = ins.magnitudes[token];
-        temp += sum * mag;
-        sum = 0;
+        const mag = ins.magnitudes[token]
+        temp += sum * mag
+        sum = 0
       }
-    });
-    return temp + sum;
+    })
+    return temp + sum
   }
-};
+}
 
-module.exports = WtoN;
+module.exports = WtoN
 
 },{}]},{},[1])
 (1)
