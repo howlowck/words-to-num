@@ -1,4 +1,4 @@
-var WtoN = require('../main');
+var WtoN = require('../src');
 
 describe("Tokenizing strings", function() {
   it("separate spaces to array", function() {

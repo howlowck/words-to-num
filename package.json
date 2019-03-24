@@ -2,6 +2,10 @@
   "name": "words-to-num",
   "version": "0.1.0",
   "description": "Converts English Numeric Words to Integer",
+  "source": "src/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "unpkg": "dist/index.umd.js",
   "typings": "./index.d.ts",
   "author": {
     "name": "Hao Luo",
@@ -13,8 +17,14 @@
     "english",
     "converter"
   ],
-  "main": "./public/js/main.js",
-  "dependencies": {},
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch",
+    "test": "jest"
+  },
+  "dependencies": {
+    "jest": "^24.5.0"
+  },
   "repository": {
     "type": "git",
     "url": "http://github.com/howlowck/words-to-num.git"
@@ -22,20 +32,6 @@
   "homepage": "https://howlowck.github.com/words-to-num",
   "license": "MIT",
   "devDependencies": {
-    "gulp": "^3.6.0",
-    "gulp-util": "^2.2.14",
-    "gulp-rename": "^1.2.0",
-    "gulp-notify": "^1.2.5",
-    "gulp-browserify": "^0.5.0",
-    "gulp-livereload": "^1.2.0",
-    "tiny-lr": "0.0.5",
-    "gulp-ruby-sass": "^0.4.1",
-    "gulp-autoprefixer": "0.0.6",
-    "gulp-minify-css": "^0.3.0",
-    "karma": "^0.12.4",
-    "karma-chrome-launcher": "^0.1.3",
-    "karma-jasmine": "^0.2.0",
-    "karma-firefox-launcher": "^0.1.3",
-    "deglobalify": "^0.2.0"
+    "microbundle": "^0.11.0"
   }
 }
