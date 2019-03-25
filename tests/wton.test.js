@@ -1,4 +1,4 @@
-var WtoN = require('../src');
+var WtoN = require('../dist');
 
 describe("Tokenizing strings", function() {
   it("separate spaces to array", function() {
@@ -53,4 +53,10 @@ describe("converts words to number", function () {
     var actual = WtoN.convert("one million 150 and nine");
     expect(actual).toEqual(1000159);
   });
+
+  // TODO:
+  // it("allows for shortened words", function () {
+  //   var actual = WtoN.convert("one twenty")
+  //   expect(actual).toEqual(120);
+  // })
 });

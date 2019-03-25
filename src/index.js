@@ -41,6 +41,7 @@ var WtoN = {
   tokenize: function (words) {
     var array = words.split(' ')
     var result = []
+    
     array.forEach(function (string) {
       if (!isNaN(+string)) {
         result.push(+string)
