@@ -18,7 +18,7 @@
     "converter"
   ],
   "scripts": {
-    "build": "microbundle",
+    "build": "microbundle --name=\"WtoN\"",
     "dev": "microbundle watch",
     "test": "jest"
   },

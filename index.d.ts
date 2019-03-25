@@ -1,4 +1,4 @@
-export as namespace WtN;
+export as namespace WtoN;
 
 /**
  * Converts a string to a number

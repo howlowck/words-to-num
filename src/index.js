@@ -73,4 +73,4 @@ var WtoN = {
   }
 }
 
-module.exports = WtoN
+export default WtoN
